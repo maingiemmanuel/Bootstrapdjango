@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+{% load static %}
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+<link rel="short cut icon" href="{% static 'images/logo.svg' %}">
+  <title>Nestle</title>
+
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.css' %}" />
+  <!--slick slider stylesheet -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick-theme.min.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap" rel="stylesheet" />
+  <!-- slick slider -->
+
+  <link rel="stylesheet" href="{% static 'css/slick-theme.css' %}" />
+  <!-- font awesome style -->
+  <link href="{% static 'css/font-awesome.min.css'%}" rel="stylesheet" />
+  <!-- Custom styles for this template -->
+  <link href="{% static 'css/style.css' %}" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="{% static 'css/responsive.css' %}" rel="stylesheet" />
+
+</head>
+
+<body class="sub_page">
+
+  <div class="main_body_content">
+
+    <div class="hero_area">
+      <!-- header section strats -->
+      <header class="header_section">
+        <div class="container-fluid">
+          <nav class="navbar navbar-expand-lg custom_nav-container ">
+            <a class="navbar-brand" href="{% url 'home' %}">
+              <img src="{% static 'images/logo.svg' %}" alt="" width="250">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class=""> </span>
+            </button>
+
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto">
+                <li>
+                  <a class="nav-link" href="{% url 'home' %}">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url 'about' %}"> About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url 'chocolate' %}">Chocolates</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url 'testimonial' %}">Testimonial</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="{% url 'contact' %}">Contact Us</a>
+                </li>
+              </ul>
+              <div class="quote_btn-container">
+                <form class="form-inline">
+                  <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                  </button>
+                </form>
+                <a href="">
+                  <i class="fa fa-user" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <!-- end header section -->
+    </div>
+
+
+    <!-- contact section -->
+
+    <section class="contact_section layout_padding">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-5 col-lg-4 offset-md-1 offset-lg-2">
+            <div class="form_container">
+              <div class="heading_container">
+                <h2>
+                  Contact Us
+                </h2>
+              </div>
+              <form action="">
+                <div>
+                  <input type="text" placeholder="Full Name " />
+                </div>
+                <div>
+                  <input type="text" placeholder="Phone number" />
+                </div>
+                <div>
+                  <input type="email" placeholder="Email" />
+                </div>
+                <div>
+                  <input type="text" class="message-box" placeholder="Message" />
+                </div>
+                <div class="d-flex ">
+                  <button>
+                    SEND NOW
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="col-md-6  px-0">
+            <div class="map_container">
+              <div class="map">
+                <div id="Map">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.7861962195307!2d36.865102809395644!3d-1.3032759986788558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f116055aaab23%3A0x43d7bc688f7c7751!2sNestle%20Kenya%20Ltd!5e0!3m2!1sen!2ske!4v1706988883130!5m2!1sen!2ske" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- end contact section -->
+
+
+    <!-- info section -->
+    <section class="info_section layout_padding2">
+      <div class="container">
+        <div class="row info_form_social_row">
+          <div class="col-md-8 col-lg-9">
+            <div class="info_form">
+              <form action="">
+                <input type="email" placeholder="Enter your email">
+                <button>
+                  <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+          <div class="col-md-4 col-lg-3">
+
+           <div class="social_box">
+              <a href="https://www.facebook.com/NestleESAR/" target="_blank">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+              </a>
+              <a href="https://www.instagram.com/Nestle/" target="_blank">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+              </a>
+              <a href="https://www.linkedin.com/company/nestle-s-a-">
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="row info_main_row">
+          <div class="col-md-6 col-lg-3">
+            <div class="info_links">
+              <h4>
+                Menu
+              </h4>
+              <div class="info_links_menu">
+                <a href="{% url 'home' %}">
+                  Home
+                </a>
+                <a href="{% url 'about' %}">
+                  About
+                </a>
+                <a href="{% url 'chocolate' %}">
+                  Chocolates
+                </a>
+                <a href="{% url 'testimonial' %}">
+                  Testimonial
+                </a>
+                <a href="{% url 'contact' %}">
+                  Contact us
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="info_insta">
+              <h4>
+                Instagram
+              </h4>
+              <div class="insta_box">
+                <div class="img-box">
+                  <img src="{% static 'images/instagram.jpeg' %}" alt="">
+                </div>
+                <p>
+                  Nestle Corporate
+                </p>
+              </div>
+              <div class="insta_box">
+                <div class="img-box">
+                  <img src="{% static 'images/instagram.jpeg' %}" alt="">
+                </div>
+                <p>
+                  Nestle Careers
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="info_detail">
+              <h4>
+                Company
+              </h4>
+               <p class="mb-0">We unlock the power of food to enhance quality of life for everyone, today and for generations to come
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <h4>
+              Contact Us
+            </h4>
+            <div class="info_contact">
+              <a href="">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                <span>
+                  Location
+                </span>
+              </a>
+              <a href="">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <span>
+                  Call +254 721 924 111
+                </span>
+              </a>
+              <a href="">
+                <i class="fa fa-envelope"></i>
+                <span>
+                  nestlecorporate@gmail.com
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- end info_section -->
+
+  </div>
+
+  <!-- footer section -->
+  <footer class="container-fluid footer_section">
+    <div class="container">
+      <div class="col-md-11 col-lg-8 mx-auto">
+        <p>
+          &copy; <span id="displayYear"></span> All Rights Reserved By
+          <a href="https://html.design/">Emmanuel Maingi</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+  <!-- footer section -->
+
+  <!-- jQery -->
+  <script  src="{% static 'js/jquery-3.4.1.min.js' %}"></script>
+  <!-- bootstrap js -->
+  <script  src="{% static 'js/bootstrap.js' %}"></script>
+  <!-- slick slider -->
+  <script  src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.js"></script>
+  <!-- custom js -->
+  <script  src="{% static 'js/custom.js' %}"></script>
+  <!-- Google Map -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap"></script>
+  <!-- End Google Map -->
+
+</body>
+
+</html>
